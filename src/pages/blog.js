@@ -21,9 +21,9 @@ const BlogPage = () => {
       <h1>Blog</h1>
       <p>Posts will show up here later on.</p>
       <ol>
-        {data.allMarkdownRemark.edges.map(d => {
+        {data.allMarkdownRemark.edges.map((d, i) => {
           return (
-            <li>
+            <li key={i}>
               <h2>{d.node.frontmatter.title}</h2>
               <p>{d.node.frontmatter.date}</p>
             </li>
