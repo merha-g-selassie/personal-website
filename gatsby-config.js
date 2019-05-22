@@ -11,6 +11,7 @@ module.exports = {
     author: "Merhawi Ghebre Selassie",
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-contentful",
       options: {

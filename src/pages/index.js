@@ -1,10 +1,11 @@
-import React from "react"
 import { Link } from "gatsby"
+import React from "react"
+import Head from "../components/head"
 import Layout from "../components/layout"
-
 const IndexPage = () => {
   return (
     <Layout>
+      <Head title="Home" />
       <h1>Hello.</h1>
       <h2>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
