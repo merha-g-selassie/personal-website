@@ -5,6 +5,8 @@ date: "2019-05-21"
 
 I just launched a new bootcamp
 
+![Landscape](./landscape.jpg)
+
 ## Topics covered
 
 1. Gatsby
