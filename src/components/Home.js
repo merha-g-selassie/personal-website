@@ -33,7 +33,7 @@ const Home = ({ height, id }) => {
       <Particles params={particlesOptions} />
       <div className={HomeStyles.flex}>
         <p>Hello, I'm Merhawi Ghebre Selassie.</p>
-        <p>A full-stack developer based in Neuchâtel, Switzerland</p>
+        <p>A full-stack developer.</p>
         <a className={HomeStyles.button} href="#about">
           View more
           <img src={arrow} alt="arrow" />

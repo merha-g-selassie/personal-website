@@ -41,7 +41,11 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link className={headerStyles.navItem} to="#about">
+            <Link
+              className={headerStyles.navItem}
+              to="#about"
+              activeClassName={headerStyles.activeNavItem}
+            >
               About
             </Link>
           </li>
