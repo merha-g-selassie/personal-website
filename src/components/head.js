@@ -12,7 +12,16 @@ const Head = ({ title }) => {
       }
     }
   `)
-  return <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
+  return (
+    <Helmet title={`${title} | ${data.site.siteMetadata.title}`}>
+      <meta charSet="utf-8" />
+      <meta
+        name="description"
+        content="Merhawi Ghebre Selassie Personal Website"
+      />
+      <html lang="en" />
+    </Helmet>
+  )
 }
 
 export default Head
