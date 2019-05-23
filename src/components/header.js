@@ -1,8 +1,11 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-//import "./header.module.scss"
 import headerStyles from "./header.module.scss"
-
+import "./header.module.scss"
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -13,56 +16,56 @@ const Header = () => {
       }
     }
   `)
+
+  const handleScroll = e => {
+    console.log(e)
+  }
+
   return (
-    <div>
-      <header className={headerStyles.header}>
-        <h1>
-          <Link to="/" className={headerStyles.title}>
-            {data.site.siteMetadata.title}
-          </Link>
-        </h1>
-        <nav>
-          <ul className={headerStyles.navList}>
-            <li>
-              <Link
-                className={headerStyles.navItem}
-                to="/"
-                activeClassName={headerStyles.activeNavItem}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={headerStyles.navItem}
-                to="/blog"
-                activeClassName={headerStyles.activeNavItem}
-              >
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={headerStyles.navItem}
-                to="/about"
-                activeClassName={headerStyles.activeNavItem}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={headerStyles.navItem}
-                to="/contact"
-                activeClassName={headerStyles.activeNavItem}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+    <header
+      className={headerStyles.header}
+      id="foo"
+      onScroll={() => {
+        console.log("onscroll")
+      }}
+    >
+      <nav className={headerStyles.nav}>
+        <ul className={headerStyles.navList}>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              to="/#home"
+              activeClassName={headerStyles.activeNavItem}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className={headerStyles.navItem} to="#about">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              to="/#portfolio"
+              activeClassName={headerStyles.activeNavItem}
+            >
+              Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              to="/#contact"
+              activeClassName={headerStyles.activeNavItem}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   )
 }
 

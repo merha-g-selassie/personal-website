@@ -1,0 +1,62 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #252934;
+
+  p {
+    font-size: 25pt;
+    text-align: center;
+  }
+
+  p:first-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    p {
+      font-size: 12pt;
+    }
+  }
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+}
+
+.button {
+  $rotation: 0deg;
+  background-color: rgba($color: #03f4e0, $alpha: 0);
+  color: white;
+  padding: 10px;
+  border: 2px solid white;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 1;
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgba($color: #03f4e0, $alpha: 0.7);
+    border: 2px solid rgba($color: #03f4e0, $alpha: 0.2);
+
+    img {
+      transform: rotate(90deg);
+    }
+  }
+
+  img {
+    position: relative;
+    top: 5px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    width: 20px;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+}

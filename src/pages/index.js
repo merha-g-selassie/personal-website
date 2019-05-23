@@ -1,17 +1,27 @@
 import React from "react"
 import Head from "../components/head"
-import Layout from "../components/layout"
+import Home from "../components/Home"
+import About from "../components/About"
+import Header from "../components/header"
+import "./index.scss"
+
 const IndexPage = () => {
+  const sectionHeight = {
+    height: "100vh",
+    color: "#fff",
+  }
+
+  const scroll = e => {
+    //console.log(e)
+    console.log(window.scrollY)
+  }
   return (
-    <Layout>
+    <div id="scroll" onScroll={scroll}>
       <Head title="Home" />
-      <h1>Hello.</h1>
-      <h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation.
-      </h2>
-    </Layout>
+      <Header />
+      <Home height={sectionHeight} id="home" />
+      <About id="about" height={sectionHeight} />
+    </div>
   )
 }
 
