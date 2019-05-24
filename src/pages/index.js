@@ -11,7 +11,8 @@ const IndexPage = () => {
   }
 
   return (
-    <div id="scroll" onScroll={scroll}>
+    // <div id="scroll" onScroll={scroll}>
+    <div id="scroll">
       <Head title="Home" />
       <Header />
       <Home height={sectionHeight} id="home" />

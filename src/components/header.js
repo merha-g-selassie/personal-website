@@ -24,7 +24,6 @@ const Header = () => {
     }
   }
 
-  console.log(checked)
   return (
     <header
       className={headerStyles.header}
