@@ -16,10 +16,19 @@ const Header = () => {
     },
   }
 
+  const headerHeight = () => {
+    if (window.innerHeight > 600) {
+      return "calc(100vh - 55vh"
+    } else {
+      return "100vh"
+    }
+  }
+
+  console.log(checked)
   return (
     <header
       className={headerStyles.header}
-      style={checked ? { height: "calc(100vh - 75vh" } : null}
+      style={checked ? { height: headerHeight() } : null}
       id="foo"
       onScroll={() => {
         console.log("onscroll")
@@ -29,7 +38,8 @@ const Header = () => {
         <div className={headerStyles.flex}>
           <ul
             className={headerStyles.navList}
-            style={checked ? style.navList : null}
+            style={checked ? style.navList : { zIndex: "-1" }}
+            onClick={() => setChecked(false)}
           >
             <li>
               <Link
@@ -70,7 +80,11 @@ const Header = () => {
           </ul>
           <input
             name="burger"
-            className={headerStyles.burger}
+            className={
+              !checked
+                ? headerStyles.burgerChecked
+                : headerStyles.burgerUnchecked
+            }
             type="checkbox"
             onChange={onHandleChecked}
           />

@@ -19,7 +19,7 @@
   }
 }
 .burger {
-  content: "hello";
+  opacity: 0;
 }
 
 .nav-list {
@@ -43,7 +43,7 @@
   background: #ffffff;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
   .flex {
     display: flex;
     flex-direction: row;
@@ -62,6 +62,10 @@
     height: 1vh;
     transition: 0.3s;
 
+    ul {
+      width: 100%;
+    }
+
     li {
       margin-top: calc(1.45rem / 2);
     }
@@ -77,6 +81,7 @@
     transition: all 0.1s linear;
   }
   .burger {
+    opacity: 1;
     color: white;
     appearance: none;
     -moz-appearance: none;
@@ -94,14 +99,54 @@
     width: 50px;
   }
 
-  .burger:before {
+  .burger {
     content: url("../images/menu.svg");
   }
 
-  .burger:checked:before {
+  .burger:checked {
     content: url("../images/cross.svg");
+
     .nav-item {
       display: none;
     }
+  }
+
+  .burger-checked {
+    opacity: 1;
+    color: white;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 10px;
+    width: 50px;
+    content: url("../images/menu.svg");
+  }
+  .burger-unchecked {
+    opacity: 1;
+    color: white;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 10px;
+    width: 50px;
+    content: url("../images/cross.svg");
   }
 }
