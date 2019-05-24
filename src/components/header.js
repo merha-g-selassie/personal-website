@@ -81,9 +81,12 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <label htmlFor="burger">burger</label>
+          <label htmlFor="burger" style={{ visibility: "hidden" }}>
+            burger
+          </label>
           <input
             name="burger"
+            id="burger"
             className={
               !checked
                 ? headerStyles.burgerChecked
