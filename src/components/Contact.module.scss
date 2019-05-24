@@ -30,10 +30,7 @@ input[type="email"] {
   width: 100%;
   margin-bottom: 20px;
 }
-textarea {
-  width: 100%;
-  margin-bottom: 20px;
-}
+
 .button {
   display: flex;
   flex-direction: row;
@@ -47,6 +44,7 @@ textarea {
   z-index: 1;
   text-decoration: none;
   text-transform: uppercase;
+  margin-top: 20px;
 
   &:hover {
     background-color: rgba($color: #03f4e0, $alpha: 0.7);
