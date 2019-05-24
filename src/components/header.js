@@ -81,7 +81,9 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <label htmlFor="burger">burger</label>
+          <label htmlFor="burger" style={{ opacity: "0" }}>
+            burger
+          </label>
           <input
             name="burger"
             id="burger"
