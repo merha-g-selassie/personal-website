@@ -24,6 +24,10 @@ const Header = () => {
     }
   }
 
+  const zIndex = () => {
+    return window.innerWidth > 500 ? null : "1"
+  }
+
   return (
     <header
       className={headerStyles.header}
@@ -37,11 +41,7 @@ const Header = () => {
         <div className={headerStyles.flex}>
           <ul
             className={headerStyles.navList}
-            style={
-              checked
-                ? style.navList
-                : { zIndex: window.innerWidth > 500 ? null : "1" }
-            }
+            style={checked ? style.navList : { zIndex: zIndex }}
             onClick={() => setChecked(false)}
           >
             <li>
