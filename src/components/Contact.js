@@ -15,27 +15,9 @@ const Contact = ({ height, id }) => {
             data-netlify-honeypot="bot-field"
           >
             <input type="hidden" name="form-name" value="contact" />
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              required
-              value="mgs"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
-              value="mgs@gmail.com"
-            />
-            <textarea
-              name="message"
-              placeholder="Message"
-              rows="5"
-              required
-              value="hello mgs."
-            />
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Message" rows="5" required />
             <div className={ContactStyles.flexRight}>
               <input
                 className={ContactStyles.button}

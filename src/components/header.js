@@ -53,7 +53,7 @@ const Header = () => {
                 Home
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 className={headerStyles.navItem}
                 to="#about"
@@ -70,7 +70,7 @@ const Header = () => {
               >
                 Portfolio
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 className={headerStyles.navItem}

@@ -33,12 +33,11 @@ const Home = ({ height, id }) => {
       <div className={HomeStyles.flex}>
         <p>Hello, I'm Merhawi Ghebre Selassie.</p>
         <p>A full-stack developer.</p>
-        <a className={HomeStyles.button} href="#about">
+        <a className={HomeStyles.button} href="#contact">
           View more
           <img src={arrow} alt="arrow" />
         </a>
-        <br />
-        <h2>Website under construction..</h2>
+        <h2 style={{ marginTop: "70px" }}>Website under construction..</h2>
       </div>
     </div>
   )
