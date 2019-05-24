@@ -37,6 +37,8 @@ const Home = ({ height, id }) => {
           View more
           <img src={arrow} alt="arrow" />
         </a>
+        <br />
+        <h2>Website under construction..</h2>
       </div>
     </div>
   )
