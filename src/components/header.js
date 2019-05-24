@@ -81,6 +81,9 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+          <label for="burger" style={{ visibility: "hidden" }}>
+            burger
+          </label>
           <input
             name="burger"
             className={
