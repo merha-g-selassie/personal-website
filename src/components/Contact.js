@@ -8,10 +8,34 @@ const Contact = ({ height, id }) => {
       <div>
         <p>Have a question or want to work together?</p>
         <div className={ContactStyles.flexForm}>
-          <form action="" method="POST">
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <textarea name="message" placeholder="Message" rows="5" required />
+          <form
+            method="post"
+            name="contact"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+              value="mgs"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              value="mgs@gmail.com"
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+              value="hello mgs."
+            />
             <div className={ContactStyles.flexRight}>
               <input
                 className={ContactStyles.button}
