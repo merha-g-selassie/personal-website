@@ -17,7 +17,7 @@ const Header = () => {
   }
 
   const headerHeight = () => {
-    if (window.innerHeight > 600) {
+    if (window.innerHeight > 500) {
       return "calc(100vh - 55vh"
     } else {
       return "100vh"
@@ -37,7 +37,11 @@ const Header = () => {
         <div className={headerStyles.flex}>
           <ul
             className={headerStyles.navList}
-            style={checked ? style.navList : { zIndex: "-1" }}
+            style={
+              checked
+                ? style.navList
+                : { zIndex: window.innerWidth > 500 ? null : "1" }
+            }
             onClick={() => setChecked(false)}
           >
             <li>
