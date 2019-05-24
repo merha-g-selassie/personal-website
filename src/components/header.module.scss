@@ -1,23 +1,31 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  padding-left: 30px;
+  z-index: 2;
   background: #1b242f;
   width: 100%;
   border-bottom: 2px solid #03f4e0;
-  transition: top 0.3s;
+  transition: 0.3s;
 
   li {
     margin-top: calc(1.45rem / 2);
   }
+}
+.burger {
+  content: "hello";
 }
 
 .nav-list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   list-style: none;
   margin: 0;
 }
@@ -33,4 +41,67 @@
 .active-nav-item {
   color: #03f4e0;
   background: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 30px;
+    z-index: 2;
+    background: #1b242f;
+    width: 100%;
+    border-bottom: 2px solid #03f4e0;
+    min-height: 50px;
+    height: 1vh;
+    transition: 0.3s;
+
+    li {
+      margin-top: calc(1.45rem / 2);
+    }
+  }
+
+  .nav-list {
+    opacity: 0;
+    flex-direction: column;
+    margin-top: 50px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+  .burger {
+    color: white;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 50px;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 10px;
+    width: 50px;
+  }
+
+  .burger:before {
+    content: url("../images/menu.svg");
+  }
+
+  .burger:checked:before {
+    content: url("../images/cross.svg");
+    .nav-item {
+      display: none;
+    }
+  }
 }

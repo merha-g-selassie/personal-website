@@ -1,13 +1,12 @@
 import React from "react"
 import Particles from "react-particles-js"
-import HomeStyles from "./Home.module.scss"
-import Layout from "../components/layout"
 import arrow from "../images/arrow.svg"
+import HomeStyles from "./Home.module.scss"
 
 const particlesOptions = {
   particles: {
     number: {
-      value: 50,
+      value: 100,
       density: {
         enable: true,
         value_area: 800,

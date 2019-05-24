@@ -32,7 +32,8 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-particles-js": "^2.6.0",
-    "smooth-scroll": "^16.0.3"
+    "smooth-scroll": "^16.0.3",
+    "three": "^0.104.0"
   },
   "devDependencies": {
     "prettier": "^1.17.1"
