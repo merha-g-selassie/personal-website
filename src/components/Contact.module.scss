@@ -8,6 +8,8 @@ h2 {
   align-items: center;
   background-color: #1b242f;
   text-align: center;
+  padding: 50px 20px 20px;
+  color: white;
 }
 
 .flex-right {
@@ -31,6 +33,11 @@ input[type="email"] {
   margin-bottom: 20px;
 }
 
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .button {
   display: flex;
   flex-direction: row;
@@ -49,5 +56,14 @@ input[type="email"] {
   &:hover {
     background-color: rgba($color: #03f4e0, $alpha: 0.7);
     border: 2px solid rgba($color: #03f4e0, $alpha: 0.2);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h2 {
+    font-size: 1.25rem !important;
+  }
+  p {
+    font-size: 12pt;
   }
 }

@@ -37,7 +37,6 @@ const Home = ({ height, id }) => {
           View more
           <img src={arrow} alt="arrow" />
         </a>
-        <h2 style={{ marginTop: "70px" }}>Website under construction..</h2>
       </div>
     </div>
   )

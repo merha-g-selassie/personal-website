@@ -1,3 +1,47 @@
-.footer {
-  margin-top: 3rem;
+.text-center {
+  text-align: center;
+  color: white;
+}
+.Footer-icon {
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 1.5em;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.name {
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .Footer-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3em;
+  }
+}
+@media (min-width: 768px) {
+  .Footer-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3em;
+  }
+}
+@media (min-width: 992px) {
+  .Footer-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 4em;
+  }
+}
+@media (min-width: 1200px) {
+  .Footer-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3em;
+  }
 }
