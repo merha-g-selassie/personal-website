@@ -1,37 +1,12 @@
 import { Link } from "gatsby"
-import React, { useState } from "react"
+import React from "react"
 import "./header.module.scss"
 import headerStyles from "./header.module.scss"
 
 const Header = () => {
-  const [checked, setChecked] = useState(false)
-
-  const onHandleChecked = e => {
-    setChecked(e.target.checked)
-  }
-
-  const style = {
-    navList: {
-      opacity: "1",
-    },
-  }
-
-  const headerHeight = () => {
-    if (window.innerHeight > 500) {
-      return "calc(100vh - 55vh"
-    } else {
-      return "100vh"
-    }
-  }
-
-  const zIndex = () => {
-    return window.innerWidth > 500 ? null : "1"
-  }
-
   return (
     <header
       className={headerStyles.header}
-      style={checked ? { height: headerHeight() } : null}
       id="foo"
       onScroll={() => {
         console.log("onscroll")
@@ -39,11 +14,7 @@ const Header = () => {
     >
       <nav className={headerStyles.nav}>
         <div className={headerStyles.flex}>
-          <ul
-            className={headerStyles.navList}
-            style={checked ? style.navList : { zIndex: zIndex }}
-            onClick={() => setChecked(false)}
-          >
+          <ul className={headerStyles.navList}>
             <li>
               <Link
                 className={headerStyles.navItem}
@@ -84,7 +55,7 @@ const Header = () => {
           <label htmlFor="burger" style={{ opacity: "0" }}>
             burger
           </label>
-          <input
+          {/* <input
             name="burger"
             id="burger"
             className={
@@ -94,7 +65,7 @@ const Header = () => {
             }
             type="checkbox"
             onChange={onHandleChecked}
-          />
+          /> */}
         </div>
       </nav>
     </header>

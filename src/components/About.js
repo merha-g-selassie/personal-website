@@ -2,7 +2,7 @@ import React from "react"
 
 const About = ({ height, id }) => {
   return (
-    <div style={height} id={id}>
+    <div id={id}>
       <p>About</p>
       {/*frontend, backend, tooling*/}
     </div>

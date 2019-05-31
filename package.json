@@ -32,8 +32,10 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-particles-js": "^2.6.0",
-    "smooth-scroll": "^16.0.3",
-    "three": "^0.104.0"
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-brands-svg-icons": "^5.8.2",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/react-fontawesome": "^0.1.4"
   },
   "devDependencies": {
     "prettier": "^1.17.1"
