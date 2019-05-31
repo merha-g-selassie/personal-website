@@ -58,3 +58,12 @@ textarea {
     border: 2px solid rgba($color: #03f4e0, $alpha: 0.2);
   }
 }
+
+@media screen and (max-width: 640px) {
+  h2 {
+    font-size: 1.25rem !important;
+  }
+  p {
+    font-size: 12pt;
+  }
+}

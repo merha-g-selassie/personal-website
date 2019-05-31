@@ -4,7 +4,7 @@ import ContactStyles from "./Contact.module.scss"
 const Contact = ({ height, id }) => {
   return (
     <div>
-      <div id={id} className={ContactStyles.flex}>
+      <div style={height} id={id} className={ContactStyles.flex}>
         <h2>Contact</h2>
         <div>
           <p>Have a question or want to work together?</p>

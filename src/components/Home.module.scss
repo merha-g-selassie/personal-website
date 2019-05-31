@@ -37,12 +37,12 @@ canvas {
   transition: 0.3s;
   cursor: pointer;
   z-index: 1;
-  text-decoration: none;
+  text-decoration: none !important;
 
   &:hover {
     background-color: rgba($color: #03f4e0, $alpha: 0.7);
     border: 2px solid rgba($color: #03f4e0, $alpha: 0.2);
-
+    color: white;
     img {
       transform: rotate(90deg);
     }
@@ -50,7 +50,6 @@ canvas {
 
   img {
     position: relative;
-    top: 5px;
     margin-bottom: 0;
     margin-left: 10px;
     width: 20px;
