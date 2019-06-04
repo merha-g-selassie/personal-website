@@ -2,7 +2,10 @@ import React from "react"
 import Particles from "react-particles-js"
 import arrow from "../images/arrow.svg"
 import HomeStyles from "./Home.module.scss"
+import Alert from "react-bootstrap/Alert"
 
+import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const particlesOptions = {
   particles: {
     number: {
@@ -29,9 +32,23 @@ const particlesOptions = {
 const Home = ({ height, id }) => {
   return (
     <div id={id} style={height} className={HomeStyles.flex}>
+      <div className={HomeStyles.position}>
+        <Alert variant="warning">
+          <FontAwesomeIcon
+            size={"2x"}
+            icon={faExclamationTriangle}
+            color="white"
+          />
+          <span>Website under construction</span>
+        </Alert>
+      </div>
+
       <Particles params={particlesOptions} />
       <div className={HomeStyles.flex}>
-        <p>Hello, I'm Merhawi Ghebre Selassie.</p>
+        <p>
+          Hello, I'm{" "}
+          <span style={{ color: "#03f4e0" }}>Merhawi Ghebre Selassie</span>.
+        </p>
         <p>A full-stack developer.</p>
         <a className={HomeStyles.button} href="#contact">
           View more
