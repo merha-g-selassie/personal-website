@@ -9,7 +9,7 @@ import "./index.scss"
 
 const IndexPage = () => {
   const sectionHeight = {
-    height: "100vh",
+    minHeight: "100vh",
     color: "#fff",
   }
 

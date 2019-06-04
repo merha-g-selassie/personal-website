@@ -14,9 +14,19 @@
     margin-bottom: 0;
   }
 
+  .position {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+  }
+
   @media screen and (max-width: 640px) {
     p {
       font-size: 12pt;
+    }
+
+    .position {
+      position: initial;
     }
   }
 }
