@@ -16,11 +16,34 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 100%;
+  width: 80%;
 }
 .align-end {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 100%;
+  width: 80%;
+}
+
+.skills {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+ul {
+  margin-left: 0;
+}
+
+li {
+  line-height: 50%;
+}
+
+.align-start li {
+  list-style: none;
+  text-align: left;
+}
+
+.align-end li {
+  list-style: none;
+  text-align: right;
 }
