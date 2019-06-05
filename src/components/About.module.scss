@@ -1,6 +1,10 @@
 h2 {
   text-transform: uppercase;
 }
+
+.header-margin {
+  margin-bottom: 50px;
+}
 .flex {
   display: flex;
   flex-direction: column;
@@ -26,8 +30,14 @@ h2 {
 }
 
 .skills {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.skill-img-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 ul {
@@ -35,7 +45,7 @@ ul {
 }
 
 li {
-  line-height: 50%;
+  line-height: 70%;
 }
 
 .align-start li {
