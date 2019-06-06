@@ -1,4 +1,5 @@
 import React from "react"
+import About from "../components/About"
 //import About from "../components/About"
 import Contact from "../components/Contact"
 import Footer from "../components/footer"
@@ -10,7 +11,6 @@ import "./index.scss"
 const IndexPage = () => {
   const sectionHeight = {
     minHeight: "100vh",
-    color: "#fff",
   }
 
   return (
@@ -25,7 +25,7 @@ const IndexPage = () => {
       <Head title="Home" />
       <Header />
       <Home height={sectionHeight} id="home" />
-      {/* <About height={sectionHeight} id="about" /> */}
+      <About height={sectionHeight} id="about" />
       <Contact height={sectionHeight} id="contact" />
       <Footer />
     </div>

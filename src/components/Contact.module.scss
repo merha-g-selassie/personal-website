@@ -1,5 +1,9 @@
-h2 {
+.header-two {
   text-transform: uppercase;
+  border-bottom: 5px solid white;
+  padding-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 50px;
 }
 .flex {
   display: flex;
@@ -60,9 +64,6 @@ textarea {
 }
 
 @media screen and (max-width: 640px) {
-  h2 {
-    font-size: 1.25rem !important;
-  }
   p {
     font-size: 12pt;
   }
