@@ -36,7 +36,7 @@ const Home = ({ height, id }) => {
     const wow = new WOW.WOW()
     wow.init()
   })
-  return (
+  return typeof window !== `undefined` ? (
     <div id={id} style={height} className={HomeStyles.flex}>
       <div className={HomeStyles.position}>
         <Alert variant="warning">
@@ -64,7 +64,7 @@ const Home = ({ height, id }) => {
         </div>
       </div>
     </div>
-  )
+  ) : null
 }
 
 export default Home
