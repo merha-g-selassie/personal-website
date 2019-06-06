@@ -17,6 +17,22 @@ a:hover {
   font-size: 0.8rem;
 }
 
+.top-icon {
+  position: relative;
+  top: -2px;
+  background: #1b242f;
+  cursor: pointer;
+  border: 2px solid white;
+  margin-bottom: 0.25rem;
+
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgba($color: #03f4e0, $alpha: 0.7);
+    border: 2px solid rgba($color: #03f4e0, $alpha: 0.2);
+  }
+}
+
 @media (max-width: 768px) {
   .Footer-icon {
     padding-left: 10px;

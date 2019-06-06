@@ -3,7 +3,8 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-
+/*console.log(process.env.CONTENTFUL_ACCESS_TOKEN)
+console.log(process.env.CONTENTFUL_SPACE_ID)*/
 module.exports = {
   /* Your site config here */
   siteMetadata: {

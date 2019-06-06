@@ -6,17 +6,19 @@ import telescope from "../images/telescope.svg"
 import AboutStyles from "./About.module.scss"
 
 const About = ({ height, id }) => {
-  return (
+  return typeof window !== `undefined` ? (
     <div>
       <div style={height} id={id} className={AboutStyles.flex}>
-        <h2 className={AboutStyles.headerTwo}>About</h2>
+        <div className="wow fadeInDown">
+          <h2 className={AboutStyles.headerTwo}>About</h2>
+        </div>
         {/*frontend, backend, tooling*/}
         <div className={AboutStyles.alignStart}>
           <div className={AboutStyles.skills}>
-            <h3>Frontend</h3>
+            <h3 className="wow  fadeInLeft">Frontend</h3>
             <div className={AboutStyles.skillImgFlex}>
               <div>
-                <ul>
+                <ul className="wow  fadeInLeft">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>SASS</li>
@@ -30,23 +32,27 @@ const About = ({ height, id }) => {
                 </ul>
               </div>
               <div className={AboutStyles.verticalFlex}>
-                <img src={atom} alt="atom" width="200px" />
+                <div className="wow  fadeInRight">
+                  <img src={atom} alt="atom" width="200px" />
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className={AboutStyles.alignEnd}>
           <div className={AboutStyles.skills}>
-            <h3>Backend</h3>
+            <h3 className="wow  fadeInLeft">Backend</h3>
             <div className={AboutStyles.skillImgFlex}>
               <div className={AboutStyles.verticalFlex}>
-                <img
-                  src={milleniumFalcon}
-                  alt="milleniumFalcon"
-                  width="200px"
-                />
+                <div className="wow  fadeInLeft">
+                  <img
+                    src={milleniumFalcon}
+                    alt="milleniumFalcon"
+                    width="200px"
+                  />
+                </div>
               </div>
-              <ul>
+              <ul className="wow  fadeInRight">
                 <li>Node</li>
                 <li>Express</li>
                 <li>Java</li>
@@ -61,10 +67,10 @@ const About = ({ height, id }) => {
         </div>
         <div className={AboutStyles.alignStart}>
           <div className={AboutStyles.skills}>
-            <h3>Databases</h3>
+            <h3 className="wow  fadeInLeft">Databases</h3>
             <div className={AboutStyles.skillImgFlex}>
               <div className={AboutStyles.verticalFlex}>
-                <ul>
+                <ul className="wow  fadeInLeft">
                   <li>Oracle</li>
                   <li>PostgreSQL</li>
                   <li>MySQL</li>
@@ -74,20 +80,24 @@ const About = ({ height, id }) => {
                 </ul>
               </div>
               <div className={AboutStyles.verticalFlex}>
-                <img src={astronaut} alt="astronaut" width="200px" />
+                <div className="wow  fadeInRight">
+                  <img src={astronaut} alt="astronaut" width="200px" />
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className={AboutStyles.alignEnd}>
           <div className={AboutStyles.skills}>
-            <h3>Others</h3>
+            <h3 className="wow  fadeInLeft">Others</h3>
             <div className={AboutStyles.skillImgFlex}>
               <div className={AboutStyles.verticalFlex}>
-                <img src={telescope} alt="telescope" width="200px" />
+                <div className="wow  fadeInLeft">
+                  <img src={telescope} alt="telescope" width="200px" />
+                </div>
               </div>
               <div className={AboutStyles.verticalFlex}>
-                <ul>
+                <ul className="wow  fadeInRight">
                   <li>Git</li>
                   <li>Webpack</li>
                   <li>Docker</li>
@@ -99,7 +109,7 @@ const About = ({ height, id }) => {
         </div>
       </div>
     </div>
-  )
+  ) : null
 }
 
 export default About

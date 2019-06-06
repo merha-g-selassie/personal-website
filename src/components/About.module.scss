@@ -21,12 +21,20 @@
   flex-direction: row;
   justify-content: flex-start;
   width: 60%;
+
+  img {
+    margin-right: 30px;
+  }
 }
 .align-end {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   width: 60%;
+
+  img {
+    margin-left: 30px;
+  }
 }
 
 .skills {
@@ -70,5 +78,14 @@ li {
   }
   .align-end {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .align-start {
+    width: 95%;
+  }
+  .align-end {
+    width: 95%;
   }
 }
