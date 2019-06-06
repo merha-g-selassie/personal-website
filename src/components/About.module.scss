@@ -1,10 +1,10 @@
-h2 {
+.header-two {
   text-transform: uppercase;
-}
-
-.header-margin {
+  border-bottom: 5px solid black;
+  padding-bottom: 10px;
   margin-bottom: 50px;
 }
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -20,13 +20,13 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 80%;
+  width: 60%;
 }
 .align-end {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 80%;
+  width: 60%;
 }
 
 .skills {
@@ -40,12 +40,18 @@ h2 {
   justify-content: space-between;
 }
 
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 ul {
   margin-left: 0;
 }
 
 li {
-  line-height: 70%;
+  line-height: 90%;
 }
 
 .align-start li {
@@ -56,4 +62,13 @@ li {
 .align-end li {
   list-style: none;
   text-align: right;
+}
+
+@media screen and (max-width: 1000px) {
+  .align-start {
+    width: 80%;
+  }
+  .align-end {
+    width: 80%;
+  }
 }

@@ -9,25 +9,27 @@ const About = ({ height, id }) => {
   return (
     <div>
       <div style={height} id={id} className={AboutStyles.flex}>
-        <h2 className={AboutStyles.headerMargin}>About</h2>
+        <h2 className={AboutStyles.headerTwo}>About</h2>
         {/*frontend, backend, tooling*/}
         <div className={AboutStyles.alignStart}>
           <div className={AboutStyles.skills}>
             <h3>Frontend</h3>
             <div className={AboutStyles.skillImgFlex}>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SASS</li>
-                <li>Javascript</li>
-                <li>JQuery</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>Electron</li>
-                <li>Android</li>
-                <li>Swift</li>
-              </ul>
               <div>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>SASS</li>
+                  <li>Javascript</li>
+                  <li>JQuery</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Electron</li>
+                  <li>Android</li>
+                  <li>Swift</li>
+                </ul>
+              </div>
+              <div className={AboutStyles.verticalFlex}>
                 <img src={atom} alt="atom" width="200px" />
               </div>
             </div>
@@ -37,7 +39,7 @@ const About = ({ height, id }) => {
           <div className={AboutStyles.skills}>
             <h3>Backend</h3>
             <div className={AboutStyles.skillImgFlex}>
-              <div>
+              <div className={AboutStyles.verticalFlex}>
                 <img
                   src={milleniumFalcon}
                   alt="milleniumFalcon"
@@ -61,15 +63,17 @@ const About = ({ height, id }) => {
           <div className={AboutStyles.skills}>
             <h3>Databases</h3>
             <div className={AboutStyles.skillImgFlex}>
-              <ul>
-                <li>Oracle</li>
-                <li>PostgreSQL</li>
-                <li>MySQL</li>
-                <li>MongoDB</li>
-                <li>Redis</li>
-                <li>Cloud Firestore</li>
-              </ul>
-              <div>
+              <div className={AboutStyles.verticalFlex}>
+                <ul>
+                  <li>Oracle</li>
+                  <li>PostgreSQL</li>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                  <li>Redis</li>
+                  <li>Cloud Firestore</li>
+                </ul>
+              </div>
+              <div className={AboutStyles.verticalFlex}>
                 <img src={astronaut} alt="astronaut" width="200px" />
               </div>
             </div>
@@ -79,15 +83,17 @@ const About = ({ height, id }) => {
           <div className={AboutStyles.skills}>
             <h3>Others</h3>
             <div className={AboutStyles.skillImgFlex}>
-              <div>
+              <div className={AboutStyles.verticalFlex}>
                 <img src={telescope} alt="telescope" width="200px" />
               </div>
-              <ul>
-                <li>Git</li>
-                <li>Webpack</li>
-                <li>Docker</li>
-                <li>Scrum</li>
-              </ul>
+              <div className={AboutStyles.verticalFlex}>
+                <ul>
+                  <li>Git</li>
+                  <li>Webpack</li>
+                  <li>Docker</li>
+                  <li>Scrum</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
