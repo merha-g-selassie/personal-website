@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Particles from "react-particles-js"
 import arrow from "../images/arrow.svg"
 import HomeStyles from "./Home.module.scss"
@@ -6,7 +6,6 @@ import Alert from "react-bootstrap/Alert"
 
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import WOW from "wowjs"
 
 const particlesOptions = {
   particles: {
@@ -32,10 +31,6 @@ const particlesOptions = {
 }
 
 const Home = ({ height, id }) => {
-  useEffect(() => {
-    const wow = new WOW.WOW()
-    wow.init()
-  })
   return typeof window !== `undefined` ? (
     <div id={id} style={height} className={HomeStyles.flex}>
       <div className={HomeStyles.position}>
