@@ -29,22 +29,27 @@ const particlesOptions = {
 
 const Home = ({ height, id }) => {
   return typeof window !== `undefined` ? (
-    <div id={id} style={height} className={HomeStyles.flex}>
+    <div id={"home"} style={height} className={HomeStyles.flex}>
       <Particles params={particlesOptions} />
-      <div className="wow fadeInUp">
+      <div>
         <div className={HomeStyles.flex}>
           <p>
             Hello, I'm{" "}
-            <span style={{ color: "#03f4e0" }}>Merhawi Ghebre Selassie</span>.
+            <span className="wow fadeIn" style={{ color: "#03f4e0" }}>
+              Merhawi Ghebre Selassie
+            </span>
+            .
           </p>
           <p>A full-stack developer.</p>
-          <button
-            className={HomeStyles.button}
-            onClick={() => smoothScroll.scrollTo("about")}
-          >
-            View more
-            <img src={arrow} alt="arrow" />
-          </button>
+          <div className="wow fadeInDown" style={{ zIndex: 1 }}>
+            <button
+              className={HomeStyles.button}
+              onClick={() => smoothScroll.scrollTo("about")}
+            >
+              View more
+              <img src={arrow} alt="arrow" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
