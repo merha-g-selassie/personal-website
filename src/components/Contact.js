@@ -1,6 +1,5 @@
-import React, { useEffect } from "react"
+import React from "react"
 import ContactStyles from "./Contact.module.scss"
-import WOW from "wowjs"
 
 const Contact = ({ height, id }) => {
   return (

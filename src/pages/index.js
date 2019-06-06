@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import About from "../components/About"
 //import About from "../components/About"
 import Contact from "../components/Contact"
@@ -7,8 +7,13 @@ import Head from "../components/head"
 import Header from "../components/header"
 import Home from "../components/Home"
 import "./index.scss"
+import WOW from "wowjs"
 
 const IndexPage = () => {
+  useEffect(() => {
+    const wow = new WOW.WOW()
+    wow.init()
+  })
   const sectionHeight = {
     minHeight: "100vh",
   }

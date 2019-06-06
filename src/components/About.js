@@ -1,16 +1,11 @@
-import React, { useEffect } from "react"
+import React from "react"
 import atom from "../images/atom.svg"
 import astronaut from "../images/atronaut.svg"
 import milleniumFalcon from "../images/Millennium-Falcon.svg"
 import telescope from "../images/telescope.svg"
 import AboutStyles from "./About.module.scss"
-import WOW from "wowjs"
 
 const About = ({ height, id }) => {
-  useEffect(() => {
-    const wow = new WOW.WOW()
-    wow.init()
-  })
   return (
     <div>
       <div style={height} id={id} className={AboutStyles.flex}>
