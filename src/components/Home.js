@@ -41,7 +41,7 @@ const Home = ({ height, id }) => {
             .
           </p>
           <p>A full-stack developer.</p>
-          <div className="wow fadeInDown" style={{ zIndex: 1 }}>
+          <div className="wow fadeInUp" style={{ zIndex: 1 }}>
             <button
               className={HomeStyles.button}
               onClick={() => smoothScroll.scrollTo("about")}
