@@ -12,7 +12,7 @@ const Contact = ({ height, id }) => {
           <div className="wow  fadeInLeft">
             <p>Have a question or want to work together?</p>
           </div>
-          <div className="wow  fadeInRight">
+          <div className="wow  fadeInLeft">
             <div className={ContactStyles.flexForm}>
               <form
                 method="post"

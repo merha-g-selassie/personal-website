@@ -1,14 +1,17 @@
-import React from "react"
+import React, { useState } from "react"
 import "./header.module.scss"
 import headerStyles from "./header.module.scss"
 import { Navbar, Nav } from "react-bootstrap"
 import { smoothScroll } from "../utils"
 
-const handleSmoothScroll = to => {
-  smoothScroll.scrollTo(to)
-}
-
 const Header = () => {
+  const [toggle, setToggle] = useState(false)
+
+  const handleSmoothScroll = to => {
+    smoothScroll.scrollTo(to)
+    setToggle(!toggle)
+  }
+
   return (
     <>
       <Navbar
@@ -17,6 +20,8 @@ const Header = () => {
         expand="md"
         variant="dark"
         className={headerStyles.navBackground}
+        onToggle={setToggle}
+        expanded={toggle}
       >
         <Navbar.Brand
           className={headerStyles.navHover}
