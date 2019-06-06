@@ -5,7 +5,7 @@ const Contact = ({ height, id }) => {
   return (
     <div style={height} id={id} className={ContactStyles.flex}>
       <div>
-        <h2>Contact</h2>
+        <h2 className={ContactStyles.headerTwo}>Contact</h2>
         <div>
           <p>Have a question or want to work together?</p>
           <div className={ContactStyles.flexForm}>
