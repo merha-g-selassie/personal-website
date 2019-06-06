@@ -21,12 +21,20 @@
   flex-direction: row;
   justify-content: flex-start;
   width: 60%;
+
+  img {
+    margin-right: 30px;
+  }
 }
 .align-end {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   width: 60%;
+
+  img {
+    margin-left: 30px;
+  }
 }
 
 .skills {
