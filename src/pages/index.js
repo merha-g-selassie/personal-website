@@ -9,6 +9,13 @@ import Home from "../components/Home"
 import "./index.scss"
 
 const IndexPage = () => {
+  useEffect(() => {
+    if (typeof window !== `undefined`) {
+      const WOW = require("wowjs")
+      const wow = new WOW.WOW()
+      wow.init()
+    }
+  })
   const sectionHeight = {
     minHeight: "100vh",
   }
@@ -29,6 +36,8 @@ const IndexPage = () => {
       <Head title="Home" />
       <Header />
       <Home height={sectionHeight} id="home" />
+      <About height={sectionHeight} id="about" />
+      <Contact height={sectionHeight} id="contact" />
       <Footer />
     </div>
   )
