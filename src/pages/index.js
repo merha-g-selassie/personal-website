@@ -12,7 +12,13 @@ const IndexPage = () => {
   useEffect(() => {
     if (typeof window !== `undefined`) {
       const WOW = require("wowjs")
-      const wow = new WOW.WOW()
+      const wow = new WOW.WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true,
+        live: true, // default
+      })
       wow.init()
     }
   })
