@@ -50,7 +50,7 @@ const Home = ({ height, id }) => {
       </div>
 
       <Particles params={particlesOptions} />
-      <div className="wow fadeInUp">
+      <div>
         <div className={HomeStyles.flex}>
           <p>
             Hello, I'm{" "}
