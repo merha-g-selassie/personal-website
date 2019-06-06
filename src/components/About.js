@@ -6,7 +6,7 @@ import telescope from "../images/telescope.svg"
 import AboutStyles from "./About.module.scss"
 
 const About = ({ height, id }) => {
-  return (
+  return typeof window !== `undefined` ? (
     <div>
       <div style={height} id={id} className={AboutStyles.flex}>
         <div className="wow fadeInDown">
@@ -109,7 +109,7 @@ const About = ({ height, id }) => {
         </div>
       </div>
     </div>
-  )
+  ) : null
 }
 
 export default About

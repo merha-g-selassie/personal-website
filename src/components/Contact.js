@@ -2,7 +2,7 @@ import React from "react"
 import ContactStyles from "./Contact.module.scss"
 
 const Contact = ({ height, id }) => {
-  return (
+  return typeof window !== `undefined` ? (
     <div style={height} id={id} className={ContactStyles.flex}>
       <div>
         <div className="wow fadeInDown">
@@ -52,7 +52,7 @@ const Contact = ({ height, id }) => {
         </div>
       </div>
     </div>
-  )
+  ) : null
 }
 
 export default Contact
