@@ -1,11 +1,14 @@
-import React from "react"
+import React, { useEffect } from "react"
 import ContactStyles from "./Contact.module.scss"
+import WOW from "wowjs"
 
 const Contact = ({ height, id }) => {
   return (
     <div style={height} id={id} className={ContactStyles.flex}>
       <div>
-        <h2 className={ContactStyles.headerTwo}>Contact</h2>
+        <div className="wow fadeInDown">
+          <h2 className={ContactStyles.headerTwo}>Contact</h2>
+        </div>
         <div>
           <p>Have a question or want to work together?</p>
           <div className={ContactStyles.flexForm}>
