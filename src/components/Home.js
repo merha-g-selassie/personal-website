@@ -38,13 +38,13 @@ const Home = ({ height, id }) => {
             <span style={{ color: "#03f4e0" }}>Merhawi Ghebre Selassie</span>.
           </p>
           <p>A full-stack developer.</p>
-          <a
+          <button
             className={HomeStyles.button}
             onClick={() => smoothScroll.scrollTo("about")}
           >
             View more
             <img src={arrow} alt="arrow" />
-          </a>
+          </button>
         </div>
       </div>
     </div>
