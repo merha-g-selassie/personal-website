@@ -7,12 +7,14 @@ import Head from "../components/head"
 import Header from "../components/header"
 import Home from "../components/Home"
 import "./index.scss"
-import WOW from "wowjs"
 
 const IndexPage = () => {
   useEffect(() => {
-    const wow = new WOW.WOW()
-    wow.init()
+    if (typeof window !== `undefined`) {
+      const WOW = require("wowjs")
+      const wow = new WOW.WOW()
+      wow.init()
+    }
   })
   const sectionHeight = {
     minHeight: "100vh",
