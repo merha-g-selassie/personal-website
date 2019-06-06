@@ -1,15 +1,20 @@
 import React, { useState } from "react"
+import { Nav, Navbar } from "react-bootstrap"
+import { smoothScroll } from "../utils"
 import "./header.module.scss"
 import headerStyles from "./header.module.scss"
-import { Navbar, Nav } from "react-bootstrap"
-import { smoothScroll } from "../utils"
 
 const Header = () => {
   const [toggle, setToggle] = useState(false)
 
   const handleSmoothScroll = to => {
     smoothScroll.scrollTo(to)
-    setToggle(!toggle)
+
+    if (to === "home") {
+      setToggle(false)
+    } else {
+      setToggle(!toggle)
+    }
   }
 
   return (

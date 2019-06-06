@@ -1,8 +1,8 @@
 import React from "react"
 import Particles from "react-particles-js"
 import arrow from "../images/arrow.svg"
-import HomeStyles from "./Home.module.scss"
 import { smoothScroll } from "../utils"
+import HomeStyles from "./Home.module.scss"
 
 const particlesOptions = {
   particles: {
@@ -29,7 +29,7 @@ const particlesOptions = {
 
 const Home = ({ height, id }) => {
   return typeof window !== `undefined` ? (
-    <div id={"home"} style={height} className={HomeStyles.flex}>
+    <div id={id} style={height} className={HomeStyles.flex}>
       <Particles params={particlesOptions} />
       <div>
         <div className={HomeStyles.flex}>
