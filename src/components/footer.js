@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import footerStyles from "./footer.module.scss"
+import doubleUp from "../images/angle-double-up.svg"
+import { smoothScroll } from "../utils"
 
 const Footer = () => {
   const style = {
@@ -34,6 +36,12 @@ const Footer = () => {
     <div>
       <footer className={footerStyles.textCenter}>
         <div style={style.background}>
+          <img
+            className={footerStyles.topIcon}
+            src={doubleUp}
+            alt="back to top"
+            onClick={() => smoothScroll.scrollTo("home")}
+          />
           <div style={style.flex}>
             <a
               href={"https://www.facebook.com/merhawi.ghebreselassie"}

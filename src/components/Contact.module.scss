@@ -63,11 +63,8 @@ textarea {
   }
 }
 
-input:required {
+textarea {
   box-shadow: none;
-}
-input:invalid {
-  box-shadow: 0 0 3px red;
 }
 
 @media screen and (max-width: 640px) {

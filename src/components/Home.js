@@ -2,10 +2,7 @@ import React from "react"
 import Particles from "react-particles-js"
 import arrow from "../images/arrow.svg"
 import HomeStyles from "./Home.module.scss"
-import Alert from "react-bootstrap/Alert"
-
-import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { smoothScroll } from "../utils"
 
 const particlesOptions = {
   particles: {
@@ -33,17 +30,6 @@ const particlesOptions = {
 const Home = ({ height, id }) => {
   return typeof window !== `undefined` ? (
     <div id={id} style={height} className={HomeStyles.flex}>
-      <div className={HomeStyles.position}>
-        <Alert variant="warning">
-          <FontAwesomeIcon
-            size={"2x"}
-            icon={faExclamationTriangle}
-            color="white"
-          />
-          <span>Website under construction</span>
-        </Alert>
-      </div>
-
       <Particles params={particlesOptions} />
       <div className="wow fadeInUp">
         <div className={HomeStyles.flex}>
@@ -52,7 +38,10 @@ const Home = ({ height, id }) => {
             <span style={{ color: "#03f4e0" }}>Merhawi Ghebre Selassie</span>.
           </p>
           <p>A full-stack developer.</p>
-          <a className={HomeStyles.button} href="#about">
+          <a
+            className={HomeStyles.button}
+            onClick={() => smoothScroll.scrollTo("about")}
+          >
             View more
             <img src={arrow} alt="arrow" />
           </a>
