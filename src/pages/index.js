@@ -6,6 +6,7 @@ import Footer from "../components/footer"
 import Head from "../components/head"
 import Header from "../components/header"
 import Home from "../components/Home"
+import Projects from "../components/Projects"
 import "./index.scss"
 
 const IndexPage = () => {
@@ -43,6 +44,7 @@ const IndexPage = () => {
       <Header />
       <Home height={sectionHeight} id="home" />
       <About height={sectionHeight} id="about" />
+      <Projects height={sectionHeight} id="projects" />
       <Contact height={sectionHeight} id="contact" />
       <Footer />
     </div>

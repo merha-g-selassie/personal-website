@@ -12,7 +12,6 @@ const About = ({ height, id }) => {
         <div className="wow fadeInDown">
           <h2 className={AboutStyles.headerTwo}>About</h2>
         </div>
-        {/*frontend, backend, tooling*/}
         <div className={AboutStyles.alignStart}>
           <div className={AboutStyles.skills}>
             <h3 className="wow  fadeInLeft">Frontend</h3>
@@ -46,6 +45,7 @@ const About = ({ height, id }) => {
               <div className={AboutStyles.verticalFlex}>
                 <div className="wow  fadeInLeft">
                   <img
+                    className={AboutStyles.rotateMilleniumFalcon}
                     src={milleniumFalcon}
                     alt="milleniumFalcon"
                     width="200px"
@@ -81,7 +81,12 @@ const About = ({ height, id }) => {
               </div>
               <div className={AboutStyles.verticalFlex}>
                 <div className="wow  fadeInRight">
-                  <img src={astronaut} alt="astronaut" width="200px" />
+                  <img
+                    src={astronaut}
+                    alt="astronaut"
+                    width="200px"
+                    className={AboutStyles.rotateAstronaut}
+                  />
                 </div>
               </div>
             </div>

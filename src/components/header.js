@@ -20,13 +20,14 @@ const Header = () => {
   return (
     <>
       <Navbar
-        style={{ zIndex: 1 }}
+        style={{ zIndex: 2 }}
         collapseOnSelect
         expand="md"
         variant="dark"
         className={headerStyles.navBackground}
         onToggle={setToggle}
         expanded={toggle}
+        sticky="top"
       >
         <Navbar.Brand
           className={headerStyles.navHover}
@@ -42,6 +43,12 @@ const Header = () => {
               className={headerStyles.navHover}
             >
               About
+            </Nav.Link>
+            <Nav.Link
+              onClick={() => handleSmoothScroll("projects")}
+              className={headerStyles.navHover}
+            >
+              Portfolio
             </Nav.Link>
             <Nav.Link
               className={headerStyles.navHover}
