@@ -5,14 +5,14 @@ const Contact = ({ height, id }) => {
   return typeof window !== `undefined` ? (
     <div style={height} id={id} className={ContactStyles.flex}>
       <div>
-        <div className="wow fadeInDown">
+        <div className="wow bounceInDown">
           <h2 className={ContactStyles.headerTwo}>Contact</h2>
         </div>
         <div>
-          <div className="wow  fadeInLeft">
+          <div className="wow  bounceInLeft">
             <p>Have a question or want to work together?</p>
           </div>
-          <div className="wow  fadeInRight">
+          <div className="wow  bounceInLeft">
             <div className={ContactStyles.flexForm}>
               <form
                 method="post"

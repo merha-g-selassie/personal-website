@@ -7,7 +7,7 @@ const Project = ({ projectName }) => {
     <div className={ProjectStyle.imgWrap}>
       <img className={ProjectStyle.imgImg} src={yelpcamp} alt="project" />
       <div className={ProjectStyle.imgDescription}>
-        <h6>{projectName}</h6>
+        <h3>{projectName}</h3>
         <button className={ProjectStyle.button}>See more</button>
       </div>
     </div>

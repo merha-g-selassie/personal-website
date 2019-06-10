@@ -9,15 +9,15 @@ const About = ({ height, id }) => {
   return typeof window !== `undefined` ? (
     <div>
       <div style={height} id={id} className={AboutStyles.flex}>
-        <div className="wow fadeInDown">
+        <div className="wow bounceInDown">
           <h2 className={AboutStyles.headerTwo}>About</h2>
         </div>
         <div className={AboutStyles.alignStart}>
           <div className={AboutStyles.skills}>
-            <h3 className="wow  fadeInLeft">Frontend</h3>
+            <h3 className="wow  bounceInLeft">Frontend</h3>
             <div className={AboutStyles.skillImgFlex}>
               <div>
-                <ul className="wow  fadeInLeft">
+                <ul className="wow  bounceInLeft">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>SASS</li>
@@ -31,7 +31,7 @@ const About = ({ height, id }) => {
                 </ul>
               </div>
               <div className={AboutStyles.verticalFlex}>
-                <div className="wow  fadeInRight">
+                <div className="wow  bounceInLeft">
                   <img src={atom} alt="atom" width="200px" />
                 </div>
               </div>
@@ -40,10 +40,10 @@ const About = ({ height, id }) => {
         </div>
         <div className={AboutStyles.alignEnd}>
           <div className={AboutStyles.skills}>
-            <h3 className="wow  fadeInLeft">Backend</h3>
+            <h3 className="wow  bounceInLeft">Backend</h3>
             <div className={AboutStyles.skillImgFlex}>
               <div className={AboutStyles.verticalFlex}>
-                <div className="wow  fadeInLeft">
+                <div className="wow  bounceInLeft">
                   <img
                     className={AboutStyles.rotateMilleniumFalcon}
                     src={milleniumFalcon}
@@ -52,7 +52,7 @@ const About = ({ height, id }) => {
                   />
                 </div>
               </div>
-              <ul className="wow  fadeInRight">
+              <ul className="wow  bounceInLeft">
                 <li>Node</li>
                 <li>Express</li>
                 <li>Java</li>
@@ -67,10 +67,10 @@ const About = ({ height, id }) => {
         </div>
         <div className={AboutStyles.alignStart}>
           <div className={AboutStyles.skills}>
-            <h3 className="wow  fadeInLeft">Databases</h3>
+            <h3 className="wow  bounceInLeft">Databases</h3>
             <div className={AboutStyles.skillImgFlex}>
               <div className={AboutStyles.verticalFlex}>
-                <ul className="wow  fadeInLeft">
+                <ul className="wow  bounceInLeft">
                   <li>Oracle</li>
                   <li>PostgreSQL</li>
                   <li>MySQL</li>
@@ -80,7 +80,7 @@ const About = ({ height, id }) => {
                 </ul>
               </div>
               <div className={AboutStyles.verticalFlex}>
-                <div className="wow  fadeInRight">
+                <div className="wow  bounceInLeft">
                   <img
                     src={astronaut}
                     alt="astronaut"
@@ -94,15 +94,15 @@ const About = ({ height, id }) => {
         </div>
         <div className={AboutStyles.alignEnd}>
           <div className={AboutStyles.skills}>
-            <h3 className="wow  fadeInLeft">Others</h3>
+            <h3 className="wow  bounceInLeft">Others</h3>
             <div className={AboutStyles.skillImgFlex}>
               <div className={AboutStyles.verticalFlex}>
-                <div className="wow  fadeInLeft">
+                <div className="wow  bounceInLeft">
                   <img src={telescope} alt="telescope" width="200px" />
                 </div>
               </div>
               <div className={AboutStyles.verticalFlex}>
-                <ul className="wow  fadeInRight">
+                <ul className="wow  bounceInLeft">
                   <li>Git</li>
                   <li>Webpack</li>
                   <li>Docker</li>
