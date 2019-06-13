@@ -35,83 +35,87 @@ const Footer = () => {
   return (
     <div>
       <footer className={footerStyles.textCenter}>
-        <div style={style.background}>
-          <img
-            className={footerStyles.topIcon}
-            src={doubleUp}
-            alt="back to top"
-            onClick={() => smoothScroll.scrollTo("home")}
-          />
-          <div style={style.flex} className="wow fadeInDown">
-            <a
-              href={"https://www.facebook.com/merhawi.ghebreselassie"}
-              aria-label="Facebook"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                className={footerStyles.FooterIcon}
-                size={"2x"}
-                icon={faFacebook}
-                color="white"
-              />
-            </a>
-            <a
-              href={"https://twitter.com/GsMerha"}
-              aria-label="Twitter"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                className={footerStyles.FooterIcon}
-                size={"2x"}
-                icon={faTwitter}
-                color="white"
-              />
-            </a>
-            <a
-              href={"https://www.instagram.com/merha_gs/"}
-              aria-label="Instagram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                className={footerStyles.FooterIcon}
-                size={"2x"}
-                icon={faInstagram}
-                color="white"
-              />
-            </a>
-            <a
-              href={"https://www.linkedin.com"}
-              aria-label="LinkedIn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                className={footerStyles.FooterIcon}
-                size={"2x"}
-                icon={faLinkedin}
-                color="white"
-              />
-            </a>
-            <a
-              href={"https://github.com/merha-g-selassie/"}
-              aria-label="Github"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                className={footerStyles.FooterIcon}
-                size={"2x"}
-                icon={faGithub}
-                color="white"
-              />
-            </a>
+        <div>
+          <div style={style.background}>
+            <img
+              className={footerStyles.topIcon}
+              src={doubleUp}
+              alt="back to top"
+              onClick={() => smoothScroll.scrollTo("home")}
+            />
+            <div style={style.flex} className="wow fadeInDown">
+              <a
+                href={"https://www.facebook.com/merhawi.ghebreselassie"}
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className={footerStyles.FooterIcon}
+                  size={"2x"}
+                  icon={faFacebook}
+                  color="white"
+                />
+              </a>
+              <a
+                href={"https://twitter.com/GsMerha"}
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className={footerStyles.FooterIcon}
+                  size={"2x"}
+                  icon={faTwitter}
+                  color="white"
+                />
+              </a>
+              <a
+                href={"https://www.instagram.com/merha_gs/"}
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className={footerStyles.FooterIcon}
+                  size={"2x"}
+                  icon={faInstagram}
+                  color="white"
+                />
+              </a>
+              <a
+                href={
+                  "https://www.linkedin.com/in/merhawi-ghebre-selassie-b3b0a6189/"
+                }
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className={footerStyles.FooterIcon}
+                  size={"2x"}
+                  icon={faLinkedin}
+                  color="white"
+                />
+              </a>
+              <a
+                href={"https://github.com/merha-g-selassie/"}
+                aria-label="Github"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className={footerStyles.FooterIcon}
+                  size={"2x"}
+                  icon={faGithub}
+                  color="white"
+                />
+              </a>
+            </div>
+            <p className={footerStyles.name}>
+              Created by {data.site.siteMetadata.author}, © 2019
+            </p>
           </div>
-          <p className={footerStyles.name}>
-            Created by {data.site.siteMetadata.author}, © 2019
-          </p>
         </div>
       </footer>
     </div>
