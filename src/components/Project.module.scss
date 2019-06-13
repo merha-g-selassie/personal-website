@@ -44,6 +44,7 @@ $opacity: 0;
   color: white;
   white-space: nowrap;
   transition: opacity 0.2s, visibility 0.2s;
+  min-width: 60%;
 
   &:hover {
     background-color: rgba($color: #03f4e0, $alpha: 1);
