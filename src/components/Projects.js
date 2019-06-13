@@ -9,6 +9,9 @@ const Projects = ({ id, height }) => {
         <h2 className={ProjectsStyles.headerTwo}>Projects</h2>
       </div>
       <div className={ProjectsStyles.container}>
+        <h3>COMING SOON..</h3>
+      </div>
+      {/*<div className={ProjectsStyles.container}>
         <div className="wow fadeInUp" data-wow-delay="0.1s">
           <Project projectName={"YelpCamp"} />
         </div>
@@ -27,7 +30,7 @@ const Projects = ({ id, height }) => {
         <div className="wow fadeInUp" data-wow-delay="0.6s">
           <Project projectName={"YelpCamp"} />
         </div>
-      </div>
+  </div>*/}
     </div>
   ) : null
 }

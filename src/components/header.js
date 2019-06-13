@@ -48,7 +48,7 @@ const Header = () => {
               onClick={() => handleSmoothScroll("projects")}
               className={headerStyles.navHover}
             >
-              Portfolio
+              Projects
             </Nav.Link>
             <Nav.Link
               className={headerStyles.navHover}
