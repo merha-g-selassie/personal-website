@@ -42,7 +42,7 @@ const Footer = () => {
             alt="back to top"
             onClick={() => smoothScroll.scrollTo("home")}
           />
-          <div style={style.flex}>
+          <div style={style.flex} className="wow fadeInDown">
             <a
               href={"https://www.facebook.com/merhawi.ghebreselassie"}
               aria-label="Facebook"
